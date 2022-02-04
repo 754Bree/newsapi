@@ -1,0 +1,44 @@
+{% macro displaySourceList(source_list) %} {% for source in source_list %}
+
+<div class="col-md-4 mt-3">
+      <div class="card " style="background-color: rgba(247, 215, 128, 0.884);">
+      
+          <a class="badge badge-primary m-2" href="/news/{{source.id}}">{{source.name}}</a>
+              
+              <div class="card-body m-3">
+                  
+                  <p class="card-text"> {{source.id}} gives the latest breaking news, top stories, politics, business, sports, entertainment, lifestyle and fashion . Click more to get details,</p>
+                  <a type="button" class="btn btn-success btn-sm float-right" style="opacity: 0.8px;" href="/news/{{source.id}}"> more</a>
+                  
+              </div>           
+         </div>
+      </div>
+  
+  
+      {% endfor %} {% endmacro %} {% macro displayArticleList(articles_list) %} {% for article in articles_list %}
+  
+<div class="col mt-4">
+<div class="card">
+
+  
+  <div class="view overlay">
+    <img class="card-img-top" style="border-top: 3em;" src="{{article.urlToImage}}"
+      alt="Card image cap">
+    <a href="{{article.url}}">
+      <div class="mask rgba-white-slight">Read More.</div>
+    </a>
+  </div>
+
+  <div class="card ">
+
+    <h4 class="badge badge-success" style="font-size: 15px;">{{article.name}}</h4>
+    <p class="card-text m-3">{{article.description}}</p>
+    <p class="card-text m-3">id :{{article.name}}</p>
+    <p class="card-text m-3"> Author :{{article.author}}</p>
+    <p class="card-text m-3"> <strong> Published on : {{article.publishedAt}}</strong></p>
+     <a class="btn btn-info" href = '{{article.url}}'> Read more</a>
+  </div>
+</div>
+</div>
+
+{% endfor %} {% endmacro %}
