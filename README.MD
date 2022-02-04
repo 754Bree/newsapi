@@ -6,10 +6,10 @@ Demo https://breesnewsapp1.herokuapp.com/
 
  ## Author
 
-[BRIANA ODHIAMBO](https://breesnewsapp1.herokuapp.com/)
+[Briana Odhiambo](https://breesnewsapp1.herokuapp.com/)
 
  ## Description
-This is an app showing a preview of various news from around the world.Being busy can at times make you miss out on certain events in the ntion.
+This is an app showing a preview of various news from around the world.Being busy can at times make you miss out on certain events in the nation.NEWSAPI is however a life saver since it keeps you updated on the latest news and updates.
 ## User Stories
  * As a user I would like:
  * to see various news sources and select the ones I prefer
